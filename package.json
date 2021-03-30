@@ -1,7 +1,7 @@
 {
   "name": "chocolate-hooks",
-  "version": "0.8.4",
-  "description": "hooks",
+  "version": "0.1.1",
+  "description": "chocolate-react-hooks",
   "repository": "https://github.com/ChocolateUI/chocolate-hooks",
   "bugs": {
     "url": "https://github.com/ChocolateUI/chocolate-hooks/issues"
