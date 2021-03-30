@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "moduleResolution": "node",
+    "module": "esnext",
+    "jsx": "react",
+    "pretty": true,
+    "sourceMap": false,
+    "strict": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "noFallthroughCasesInSwitch": true,
+    "lib": ["es2018", "dom"]
+  },
+  "include": ["src", "__tests__"]
+}
