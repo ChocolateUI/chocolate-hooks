@@ -55,9 +55,11 @@ jobs:
           BUNDLESIZE_GITHUB_TOKEN: ${{ secrets.BUNDLESIZE_GITHUB_TOKEN }}
 
       - name: Build docs
+        # if: github.event_name == 'push' && startsWith( env.commitmsg , 'chore(release):' ) || startsWith( env.commitmsg , 'docs:' )
         run: yarn build:docs
 
       - name: Deploy docs
+        # if: github.event_name == 'push' && startsWith( env.commitmsg , 'chore(release):' ) || startsWith( env.commitmsg , 'docs:' )
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

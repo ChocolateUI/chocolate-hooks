@@ -1,8 +1,12 @@
 import pkg from './package.json'
+import { defineConfig } from 'dumi';
 
-export default {
-  base: '/chocolate-hooks',
-  publicPath: '/chocolate-hooks/',
+const repo = 'chocolate-hooks';
+
+export default defineConfig({
+  base: `/${repo}/`,
+  publicPath: `/${repo}/`,
+  title: repo,
   description: pkg.description,
   favicon: '/logo.png',
   logo: './logo.png',
@@ -11,13 +15,18 @@ export default {
     '@primary-color': '#31c27c',
   },
   exportStatic: {},
-  extraBabelPlugins: [
-    [
-      'babel-plugin-import',
-      {
-        libraryName: 'antd',
-        style: true, // or 'css'
-      },
-    ],
+  resolve: {
+    includes: ['docs', 'src'],
+  },
+  navs: [
+    {
+      title: 'Hooks',
+      path: '/hooks',
+    },
+    {
+      title: 'github',
+      path: 'https://github.com/ChocolateUI/chocolate-hooks',
+    },
   ],
-}
+  // more config: https://d.umijs.org/config
+});
