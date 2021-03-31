@@ -22,9 +22,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # - name: Get commit message
-      #   run: |
-      #     echo ::set-env name=commitmsg::$(git log --format=%B -n 1 ${{ github.event.after }})
+      - name: Get commit message
+        run: |
+          echo name=commitmsg=$(git log --format=%B -n 1 ${{ github.event.after }}) >> $GITHUB_ENV
       - name: Show commit message
         run: echo $commitmsg
 
