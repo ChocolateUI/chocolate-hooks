@@ -1,6 +1,8 @@
 import pkg from './package.json'
 
 export default {
+  base: '/chocolate-hooks',
+  publicPath: '/chocolate-hooks/',
   description: pkg.description,
   favicon: '/logo.png',
   logo: './logo.png',
