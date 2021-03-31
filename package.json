@@ -1,7 +1,7 @@
 {
   "name": "chocolate-hooks",
   "version": "0.1.1",
-  "description": "chocolate-react-hooks",
+  "description": "a hook library for work",
   "repository": "https://github.com/ChocolateUI/chocolate-hooks",
   "bugs": {
     "url": "https://github.com/ChocolateUI/chocolate-hooks/issues"
@@ -72,6 +72,9 @@
   "dependencies": {
     "history": "^5.0.0",
     "react-router-dom": "^5.2.0"
+  },
+  "release": {
+    "branches": ["main"]
   },
   "devDependencies": {
     "@babel/core": "^7.11.4",
