@@ -1,8 +1,8 @@
 import pkg from './package.json'
 
 export default {
-  base: 'https://github.com/ChocolateUI/chocolate-hooks',
-  publicPath: 'https://github.com/ChocolateUI/chocolate-hooks',
+  base: '/ChocolateUI/chocolate-hooks',
+  publicPath: '/ChocolateUI/chocolate-hooks',
   description: pkg.description,
   favicon: '/logo.png',
   logo: './logo.png',
