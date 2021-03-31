@@ -66,8 +66,8 @@
     }
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react": "^16.8.0 || ^17.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0"
   },
   "dependencies": {
     "history": "^5.0.0",
@@ -122,9 +122,9 @@
     "lodash": "^4.17.20",
     "prettier": "^2.1.1",
     "progress-bar-webpack-plugin": "^2.1.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-test-renderer": "^16.13.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-test-renderer": "17.0.2",
     "semantic-release": "^17.1.1",
     "standard-version": "^8.0.0",
     "typescript": "^3.9.7",
