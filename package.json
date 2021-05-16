@@ -126,7 +126,7 @@
     "react-dom": "17.0.2",
     "react-test-renderer": "17.0.2",
     "semantic-release": "^17.1.1",
-    "standard-version": "^8.0.0",
+    "standard-version": "9.3.0",
     "typescript": "^3.9.7",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.44.1",
