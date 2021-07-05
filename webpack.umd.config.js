@@ -49,6 +49,11 @@ module.exports = {
         exclude: '/node_modules/',
         include: [path.resolve('src')],
       },
+      {
+        test: /.(scss|sass)$/,
+        loaders: ['style-loader', 'css-loader', 'sass-loader'],
+        include: path.resolve(__dirname, '../'),
+      },
     ],
   },
   plugins: [

@@ -70,11 +70,15 @@
     "react-dom": "^16.8.0 || ^17.0.0"
   },
   "dependencies": {
+    "@umijs/plugin-sass": "^1.1.1",
+    "chocolate-ui": "^0.9.8",
     "history": "^5.0.0",
     "react-router-dom": "^5.2.0"
   },
   "release": {
-    "branches": ["main"]
+    "branches": [
+      "main"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.11.4",
@@ -102,6 +106,7 @@
     "bundlesize": "^0.18.0",
     "codecov": "^3.7.2",
     "commitlint": "^9.1.2",
+    "css-loader": "^5.2.0",
     "dumi": "^1.0.34",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.3",
@@ -120,13 +125,16 @@
     "jest": "^26.4.2",
     "lint-staged": "^10.2.13",
     "lodash": "^4.17.20",
+    "node-sass": "^5.0.0",
     "prettier": "^2.1.1",
     "progress-bar-webpack-plugin": "^2.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-test-renderer": "17.0.2",
+    "sass-loader": "^11.0.1",
     "semantic-release": "^17.1.1",
     "standard-version": "^8.0.0",
+    "style-loader": "^2.0.0",
     "typescript": "^3.9.7",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.44.1",
