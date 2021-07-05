@@ -2939,7 +2939,7 @@ array-ify@^1.0.0:
   resolved "https://registry.npm.taobao.org/array-ify/download/array-ify-1.0.0.tgz#9e528762b4a9066ad163a6962a364418e9626ece"
   integrity sha1-nlKHYrSpBmrRY6aWKjZEGOlibs4=
 
-array-includes@^3.1.1:
+array-includes@^3.1.1, array-includes@^3.1.2, array-includes@^3.1.3:
   version "3.1.3"
   resolved "https://registry.npm.taobao.org/array-includes/download/array-includes-3.1.3.tgz#c7f619b382ad2afaf5326cddfdc0afc61af7690a"
   integrity sha1-x/YZs4KtKvr1Mmzd/cCvxhr3aQo=
@@ -2993,10 +2993,10 @@ array.prototype.flat@^1.2.3:
     define-properties "^1.1.3"
     es-abstract "^1.18.0-next.1"
 
-array.prototype.flatmap@^1.2.3:
+array.prototype.flatmap@^1.2.4:
   version "1.2.4"
-  resolved "https://registry.npm.taobao.org/array.prototype.flatmap/download/array.prototype.flatmap-1.2.4.tgz#94cfd47cc1556ec0747d97f7c7738c58122004c9"
-  integrity sha1-lM/UfMFVbsB0fZf3x3OMWBIgBMk=
+  resolved "https://registry.yarnpkg.com/array.prototype.flatmap/-/array.prototype.flatmap-1.2.4.tgz#94cfd47cc1556ec0747d97f7c7738c58122004c9"
+  integrity sha512-r9Z0zYoxqHz60vvQbWEdXIEtCwHF0yxaWfno9qzXeNHvfyl3BZqygmGzb84dsubyaXLH4husF+NFgMSdpZhk2Q==
   dependencies:
     call-bind "^1.0.0"
     define-properties "^1.1.3"
@@ -5527,22 +5527,23 @@ eslint-plugin-react-hooks@4.1.0:
   resolved "https://registry.nlark.com/eslint-plugin-react-hooks/download/eslint-plugin-react-hooks-4.1.0.tgz#6323fbd5e650e84b2987ba76370523a60f4e7925"
   integrity sha1-YyP71eZQ6Esph7p2NwUjpg9OeSU=
 
-eslint-plugin-react@7.20.6:
-  version "7.20.6"
-  resolved "https://registry.nlark.com/eslint-plugin-react/download/eslint-plugin-react-7.20.6.tgz#4d7845311a93c463493ccfa0a19c9c5d0fd69f60"
-  integrity sha1-TXhFMRqTxGNJPM+goZycXQ/Wn2A=
+eslint-plugin-react@7.24.0:
+  version "7.24.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.24.0.tgz#eadedfa351a6f36b490aa17f4fa9b14e842b9eb4"
+  integrity sha512-KJJIx2SYx7PBx3ONe/mEeMz4YE0Lcr7feJTCMyyKb/341NcjuAgim3Acgan89GfPv7nxXK2+0slu0CWXYM4x+Q==
   dependencies:
-    array-includes "^3.1.1"
-    array.prototype.flatmap "^1.2.3"
+    array-includes "^3.1.3"
+    array.prototype.flatmap "^1.2.4"
     doctrine "^2.1.0"
     has "^1.0.3"
-    jsx-ast-utils "^2.4.1"
-    object.entries "^1.1.2"
-    object.fromentries "^2.0.2"
-    object.values "^1.1.1"
+    jsx-ast-utils "^2.4.1 || ^3.0.0"
+    minimatch "^3.0.4"
+    object.entries "^1.1.4"
+    object.fromentries "^2.0.4"
+    object.values "^1.1.4"
     prop-types "^15.7.2"
-    resolve "^1.17.0"
-    string.prototype.matchall "^4.0.2"
+    resolve "^2.0.0-next.3"
+    string.prototype.matchall "^4.0.5"
 
 eslint-rule-composer@^0.3.0:
   version "0.3.0"
@@ -8054,6 +8055,14 @@ jsx-ast-utils@^2.4.1:
     array-includes "^3.1.1"
     object.assign "^4.1.0"
 
+"jsx-ast-utils@^2.4.1 || ^3.0.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/jsx-ast-utils/-/jsx-ast-utils-3.2.0.tgz#41108d2cec408c3453c1bbe8a4aae9e1e2bd8f82"
+  integrity sha512-EIsmt3O3ljsU6sot/J4E1zDRxfBNrhjyf/OKjlydwgEimQuznlM4Wv7U+ueONJMyEn1WRE0K8dhi3dVAXYT24Q==
+  dependencies:
+    array-includes "^3.1.2"
+    object.assign "^4.1.2"
+
 just-diff-apply@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/just-diff-apply/download/just-diff-apply-3.0.0.tgz#a77348d24f0694e378b57293dceb65bdf5a91c4f"
@@ -9688,7 +9697,7 @@ object.assign@^4.1.0, object.assign@^4.1.2:
     has-symbols "^1.0.1"
     object-keys "^1.1.1"
 
-object.entries@^1.1.1, object.entries@^1.1.2:
+object.entries@^1.1.1, object.entries@^1.1.2, object.entries@^1.1.4:
   version "1.1.4"
   resolved "https://registry.nlark.com/object.entries/download/object.entries-1.1.4.tgz#43ccf9a50bc5fd5b649d45ab1a579f24e088cafd"
   integrity sha1-Q8z5pQvF/VtknUWrGlefJOCIyv0=
@@ -9697,7 +9706,7 @@ object.entries@^1.1.1, object.entries@^1.1.2:
     define-properties "^1.1.3"
     es-abstract "^1.18.2"
 
-object.fromentries@^2.0.2, object.fromentries@^2.0.3:
+object.fromentries@^2.0.3, object.fromentries@^2.0.4:
   version "2.0.4"
   resolved "https://registry.nlark.com/object.fromentries/download/object.fromentries-2.0.4.tgz#26e1ba5c4571c5c6f0890cef4473066456a120b8"
   integrity sha1-JuG6XEVxxcbwiQzvRHMGZFahILg=
@@ -9714,7 +9723,7 @@ object.pick@^1.3.0:
   dependencies:
     isobject "^3.0.1"
 
-object.values@^1.1.1, object.values@^1.1.2:
+object.values@^1.1.1, object.values@^1.1.2, object.values@^1.1.4:
   version "1.1.4"
   resolved "https://registry.nlark.com/object.values/download/object.values-1.1.4.tgz#0d273762833e816b693a637d30073e7051535b30"
   integrity sha1-DSc3YoM+gWtpOmN9MAc+cFFTWzA=
@@ -11944,6 +11953,14 @@ resolve@^1.10.0, resolve@^1.12.0, resolve@^1.13.1, resolve@^1.17.0, resolve@^1.1
     is-core-module "^2.2.0"
     path-parse "^1.0.6"
 
+resolve@^2.0.0-next.3:
+  version "2.0.0-next.3"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-2.0.0-next.3.tgz#d41016293d4a8586a39ca5d9b5f15cbea1f55e46"
+  integrity sha512-W8LucSynKUIDu9ylraa7ueVZ7hc0uAgJBxVsQSKOXOyle8a93qXhcz+XAXZ8bIq2d6i4Ehddn6Evt+0/UwKk6Q==
+  dependencies:
+    is-core-module "^2.2.0"
+    path-parse "^1.0.6"
+
 restore-cursor@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npm.taobao.org/restore-cursor/download/restore-cursor-3.1.0.tgz#39f67c54b3a7a58cea5236d95cf0034239631f7e"
@@ -12777,10 +12794,10 @@ string-width@^4.1.0, string-width@^4.2.0:
     is-fullwidth-code-point "^3.0.0"
     strip-ansi "^6.0.0"
 
-string.prototype.matchall@^4.0.2:
+string.prototype.matchall@^4.0.5:
   version "4.0.5"
-  resolved "https://registry.nlark.com/string.prototype.matchall/download/string.prototype.matchall-4.0.5.tgz?cache=0&sync_timestamp=1621973430160&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fstring.prototype.matchall%2Fdownload%2Fstring.prototype.matchall-4.0.5.tgz#59370644e1db7e4c0c045277690cf7b01203c4da"
-  integrity sha1-WTcGROHbfkwMBFJ3aQz3sBIDxNo=
+  resolved "https://registry.yarnpkg.com/string.prototype.matchall/-/string.prototype.matchall-4.0.5.tgz#59370644e1db7e4c0c045277690cf7b01203c4da"
+  integrity sha512-Z5ZaXO0svs0M2xd/6By3qpeKpLKd9mO4v4q3oMEQrk8Ck4xOD5d5XeBOOjGrmVZZ/AHB1S0CgG4N5r1G9N3E2Q==
   dependencies:
     call-bind "^1.0.2"
     define-properties "^1.1.3"
