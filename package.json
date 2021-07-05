@@ -124,7 +124,7 @@
     "husky": "4.2.5",
     "jest": "26.4.2",
     "lint-staged": "10.2.13",
-    "lodash": "4.17.20",
+    "lodash": "4.17.21",
     "prettier": "2.1.1",
     "progress-bar-webpack-plugin": "2.1.0",
     "react": "17.0.2",
