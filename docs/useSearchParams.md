@@ -16,16 +16,11 @@
  */
 import React from 'react'
 import { Router } from 'react-router-dom'
-import { Table, Button, Space } from 'antd'
-// import { Button as Keys } from 'chocolate-ui'
-// import Button from 'chocolate-ui/dist/components/Button';
-
-// import 'chocolate-ui/dist/components/button/style';
-
-// import Button from 'cuke-ui/lib/button';
-// import 'cuke-ui/lib/button/style';
+import { Table, Space } from 'antd'
 import { createBrowserHistory } from 'history'
 import { useSearchParams, UseSearchParamsSchemaType } from '../src/index'
+import { Button } from 'chocolate-ui';
+import 'chocolate-ui/dist/components/button/style';
 
 const history = createBrowserHistory()
 
@@ -77,10 +72,10 @@ const App = () => {
     <>
       <pre>{JSON.stringify(searchParams, undefined, 2)}</pre>
       <Space style={{margin: '10px 0'}}>
-        <Button type="primary" onClick={() => remove(['page'])}>
+        <Button btnType="primary" size="sm" onClick={() => remove(['page'])}>
           移除page属性
         </Button>
-        <Button type="dashed" onClick={() => reset()}>
+        <Button btnType="default" size="sm" onClick={() => reset()}>
           重置page属性
         </Button>
       </Space>
@@ -116,7 +111,9 @@ export default Example
 
 import React from 'react'
 import { Router, useLocation } from 'react-router-dom'
-import { Button, Space, Divider } from 'antd'
+import { Space, Divider } from 'antd'
+import { Button } from 'chocolate-ui';
+import 'chocolate-ui/dist/components/button/style';
 import { createBrowserHistory } from 'history'
 import { useSearchParams, UseSearchParamsSchemaType } from '../src/index'
 
@@ -145,9 +142,10 @@ const App = () => {
 
   return (
     <div>
-      <h2>基础示例:</h2>
+      <h5>基础示例:</h5>
       <Button
-        type="primary"
+        btnType="primary"
+        size="sm"
         onClick={() => {
           set({
             name: 'test',
@@ -163,19 +161,20 @@ const App = () => {
 
       <Divider/>
 
-      <h3>原始 location search: </h3>
+      <h6>原始 location search: </h6>
       <pre>{JSON.stringify(search, undefined, 2)}</pre>
       <Divider />
 
-      <h3>通过 schema 解析之后的 searchParams:</h3>
+      <h6>通过 schema 解析之后的 searchParams:</h6>
       <pre>{JSON.stringify(searchParams, undefined, 2)}</pre>
       <Divider />
 
-      <h2>移除某个属性</h2>
+      <h5>移除某个属性</h5>
 
       <Space>
         <Button
-          type="danger"
+          btnType="danger"
+          size="sm"
           onClick={() => {
             remove(['name'])
           }}
@@ -183,7 +182,8 @@ const App = () => {
           移除 name 属性
         </Button>
         <Button
-          type="danger"
+          btnType="danger"
+          size="sm"
           onClick={() => {
             remove()
           }}
@@ -191,7 +191,8 @@ const App = () => {
           移除所有属性
         </Button>
         <Button
-          type="danger"
+          btnType="danger"
+          size="sm"
           onClick={() => {
             reset()
           }}
@@ -228,6 +229,8 @@ const { searchParams, set, remove, reset } = useSearchParams(options)
 | set | 设置参数，如果已存在,则会覆盖 | `(values: Partial<T>) => void` | `-` |
 | remove | 移除参数，如果不传参数, 则移除所有 | `(keys?: Array<keyof T>) => void` | `-` |
 | reset | 重置所有参数 | `() => void` | `-` |
+
+<br/>
 
 ```js
 export interface UseSearchParamsSchema {

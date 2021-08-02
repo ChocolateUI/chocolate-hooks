@@ -10,23 +10,20 @@ hero:
 footer: Open-source MIT Licensed | Copyright © 2021-present<br />Powered by self
 ---
 
-## 快速上手
+## 背景
 
-Create first doc in manual way
-
-```bash
-$ npx dumi dev
-```
+就是想让轮子跑起来，节省开发成本，一天工作六小时不是梦。
 
 ## 特性和优势
 
-- UI 样式高度可配置，拓展性强，轻松适应各类产品风格
-- 基于 React Native 的 iOS / Android 多平台支持，组件丰富，能全面覆盖各类场景
-- 使用 TypeScript 开发，提供类型定义文件，支持类型及属性智能提示，方便业务开发
-- 全面兼容 react 和 react-native
-- 基于 react-navigation 做路由跳转
-
+- 总结日常使用到的 `react-hooks`
+- 部分 `hooks` 演示中使用到的组件来自于 `chocolate-ui`
+- 后续不局限于 `react-hooks`，考虑加入 `flutter widget` / `vue component` 通用组件
 
 ## 反馈
 
 Please visit [GitHub](https://github.com/ChocolateUI/chocolate-hooks)
+
+## 友情链接
+
+[chocolate-ui](https://github.com/ChocolateUI/chocolate-ui)

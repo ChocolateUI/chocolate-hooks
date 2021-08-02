@@ -2,7 +2,7 @@ export interface UseSearchParamsOptions {
   schema: UseSearchParamsSchema
   pathname?: string
 }
-// like mongoose
+
 export interface UseSearchParamsSchema {
   [key: string]: UseSearchParamsSchemaDetail | string
 }

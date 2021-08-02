@@ -1919,6 +1919,11 @@
     jest-diff "^25.2.1"
     pretty-format "^25.2.1"
 
+"@types/js-cookie@^2.2.7":
+  version "2.2.7"
+  resolved "https://registry.nlark.com/@types/js-cookie/download/@types/js-cookie-2.2.7.tgz#226a9e31680835a6188e887f3988e60c04d3f6a3"
+  integrity sha1-ImqeMWgINaYYjoh/OYjmDATT9qM=
+
 "@types/json-schema@^7.0.3", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.6":
   version "7.0.7"
   resolved "https://registry.nlark.com/@types/json-schema/download/@types/json-schema-7.0.7.tgz#98a993516c859eb0d5c4c8f098317a9ea68db9ad"
@@ -7889,6 +7894,11 @@ jest@26.4.2:
     "@jest/core" "^26.4.2"
     import-local "^3.0.2"
     jest-cli "^26.4.2"
+
+js-cookie@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.nlark.com/js-cookie/download/js-cookie-3.0.0.tgz#db1661d5459920ec95aaf186ccf74ceb4a495164"
+  integrity sha1-2xZh1UWZIOyVqvGGzPdM60pJUWQ=
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"

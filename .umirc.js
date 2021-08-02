@@ -50,5 +50,5 @@ export default defineConfig({
   ],
   // more config: https://d.umijs.org/config
 });
-// antd/lib/button/style
-// chocolate-ui/dist/index.css
+
+// 样式覆盖：https://github.com/fi3ework/blog/issues/44
