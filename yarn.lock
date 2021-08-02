@@ -1939,11 +1939,6 @@
   resolved "https://registry.nlark.com/@types/katex/download/@types/katex-0.11.0.tgz?cache=0&sync_timestamp=1621243063096&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fkatex%2Fdownload%2F%40types%2Fkatex-0.11.0.tgz#b16c54ee670925ffef0616beae9e90c557e17334"
   integrity sha1-sWxU7mcJJf/vBha+rp6QxVfhczQ=
 
-"@types/lodash@4.14.170":
-  version "4.14.170"
-  resolved "https://registry.nlark.com/@types/lodash/download/@types/lodash-4.14.170.tgz#0d67711d4bf7f4ca5147e9091b847479b87925d6"
-  integrity sha1-DWdxHUv39MpRR+kJG4R0ebh5JdY=
-
 "@types/mdast@^3.0.0":
   version "3.0.3"
   resolved "https://registry.nlark.com/@types/mdast/download/@types/mdast-3.0.3.tgz?cache=0&sync_timestamp=1621241822534&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fmdast%2Fdownload%2F%40types%2Fmdast-3.0.3.tgz#2d7d671b1cd1ea3deb306ea75036c2a0407d2deb"
@@ -8452,11 +8447,6 @@ lodash.uniqby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.npm.taobao.org/lodash.uniqby/download/lodash.uniqby-4.7.0.tgz#d99c07a669e9e6d24e1362dfe266c67616af1302"
   integrity sha1-2ZwHpmnp5tJOE2Lf4mbGdhavEwI=
-
-lodash@4.17.20:
-  version "4.17.20"
-  resolved "https://registry.nlark.com/lodash/download/lodash-4.17.20.tgz?cache=0&sync_timestamp=1618847150612&other_urls=https%3A%2F%2Fregistry.nlark.com%2Flodash%2Fdownload%2Flodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
-  integrity sha1-tEqbYpe8tpjxxRo1RaKzs2jVnFI=
 
 lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.7.0:
   version "4.17.21"
