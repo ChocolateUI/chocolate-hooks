@@ -71,7 +71,7 @@
   },
   "dependencies": {
     "@umijs/plugin-sass": "^1.1.1",
-    "chocolate-ui": "^0.9.8",
+    "chocolate-ui": "^1.0.1",
     "history": "^5.0.0",
     "react-router-dom": "^5.2.0"
   },
