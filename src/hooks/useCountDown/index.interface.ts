@@ -1,3 +1,3 @@
 declare interface Window {
-  webkitRequestAnimationFrame: any
+  webkitRequestAnimationFrame: number
 }
