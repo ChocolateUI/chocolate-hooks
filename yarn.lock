@@ -3282,16 +3282,6 @@
     eslint-scope "^5.1.1"
     eslint-utils "^3.0.0"
 
-"@typescript-eslint/experimental-utils@^2.5.0":
-  version "2.34.0"
-  resolved "https://registry.nlark.com/@typescript-eslint/experimental-utils/download/@typescript-eslint/experimental-utils-2.34.0.tgz#d3524b644cdb40eebceca67f8cf3e4cc9c8f980f"
-  integrity sha1-01JLZEzbQO687KZ/jPPkzJyPmA8=
-  dependencies:
-    "@types/json-schema" "^7.0.3"
-    "@typescript-eslint/typescript-estree" "2.34.0"
-    eslint-scope "^5.0.0"
-    eslint-utils "^2.0.0"
-
 "@typescript-eslint/parser@3.10.1", "@typescript-eslint/parser@^3.6.1":
   version "3.10.1"
   resolved "https://registry.nlark.com/@typescript-eslint/parser/download/@typescript-eslint/parser-3.10.1.tgz#1883858e83e8b442627e1ac6f408925211155467"
@@ -3330,19 +3320,6 @@
   version "4.33.0"
   resolved "https://registry.npmjs.org/@typescript-eslint/types/-/types-4.33.0.tgz#a1e59036a3b53ae8430ceebf2a919dc7f9af6d72"
   integrity sha512-zKp7CjQzLQImXEpLt2BUw1tvOMPfNoTAfb8l51evhYbOEEzdWyQNmHWWGPR6hwKJDAi+1VXSBmnhL9kyVTTOuQ==
-
-"@typescript-eslint/typescript-estree@2.34.0":
-  version "2.34.0"
-  resolved "https://registry.nlark.com/@typescript-eslint/typescript-estree/download/@typescript-eslint/typescript-estree-2.34.0.tgz#14aeb6353b39ef0732cc7f1b8285294937cf37d5"
-  integrity sha1-FK62NTs57wcyzH8bgoUpSTfPN9U=
-  dependencies:
-    debug "^4.1.1"
-    eslint-visitor-keys "^1.1.0"
-    glob "^7.1.6"
-    is-glob "^4.0.1"
-    lodash "^4.17.15"
-    semver "^7.3.2"
-    tsutils "^3.17.1"
 
 "@typescript-eslint/typescript-estree@3.10.1":
   version "3.10.1"
@@ -7658,12 +7635,12 @@ eslint-plugin-import@^2.22.1:
     resolve "^1.20.0"
     tsconfig-paths "^3.11.0"
 
-eslint-plugin-jest@23.20.0:
-  version "23.20.0"
-  resolved "https://registry.nlark.com/eslint-plugin-jest/download/eslint-plugin-jest-23.20.0.tgz#e1d69c75f639e99d836642453c4e75ed22da4099"
-  integrity sha1-4dacdfY56Z2DZkJFPE517SLaQJk=
+eslint-plugin-jest@24.6.0:
+  version "24.6.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-24.6.0.tgz#73ac7cd40419a227b3f1b2b686c023563ceb1e51"
+  integrity sha512-xNz0ajbu7ijrNMI1RMDXZis40DWBNTe/i+eXIzovva1Jk2UmI6AdN6xleZiunb1U0G/doMwG3rJjrmlCl5IHkQ==
   dependencies:
-    "@typescript-eslint/experimental-utils" "^2.5.0"
+    "@typescript-eslint/experimental-utils" "^4.0.1"
 
 eslint-plugin-jest@^24.1.0:
   version "24.5.2"
