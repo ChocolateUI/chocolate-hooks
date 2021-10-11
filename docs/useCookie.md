@@ -19,7 +19,7 @@ import { createBrowserHistory } from 'history'
 import { useCookie } from '../src/index'
 import { Button } from 'chocolate-ui'
 // import Button from 'chocolate-ui/dist/components/Button';
-import 'chocolate-ui/dist/components/button/style';
+import 'chocolate-ui/dist/components/Button/style';
 const history = createBrowserHistory()
 
 const App = () => {
