@@ -20,7 +20,7 @@ import { Table, Space } from 'antd'
 import { createBrowserHistory } from 'history'
 import { useSearchParams, UseSearchParamsSchemaType } from '../src/index'
 import { Button } from 'chocolate-ui';
-import 'chocolate-ui/dist/components/button/style';
+import 'chocolate-ui/dist/components/Buttons/style';
 
 const history = createBrowserHistory()
 
@@ -113,7 +113,7 @@ import React from 'react'
 import { Router, useLocation } from 'react-router-dom'
 import { Space, Divider } from 'antd'
 import { Button } from 'chocolate-ui';
-import 'chocolate-ui/dist/components/button/style';
+import 'chocolate-ui/dist/components/Buttons/style';
 import { createBrowserHistory } from 'history'
 import { useSearchParams, UseSearchParamsSchemaType } from '../src/index'
 
