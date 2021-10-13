@@ -5390,10 +5390,10 @@ cheerio@^1.0.0-rc.3:
     parse5-htmlparser2-tree-adapter "^6.0.1"
     tslib "^2.2.0"
 
-chocolate-ui@^1.0.43:
-  version "1.0.43"
-  resolved "https://registry.yarnpkg.com/chocolate-ui/-/chocolate-ui-1.0.43.tgz#8b6ac5cd786402443c25d659160a6c4d7deeac48"
-  integrity sha512-WCLYYQBO/AhG4Vfa9Wvnpv/eOVQhHabvE9GdLirAAzpcb3QDF9y00241Kgv/Ey9IAHx1V4sGB3LSWIWp5SX7RQ==
+chocolate-ui@^1.0.44:
+  version "1.0.44"
+  resolved "https://registry.yarnpkg.com/chocolate-ui/-/chocolate-ui-1.0.44.tgz#07923480b0f523dcb8bd6f2e092ac34e6fe6237c"
+  integrity sha512-u6MUmkeyRFO4vlvnN6OYUhhEtmdPp6et9e9E57wedeEdi0dRepLqMvSVKyClmX99roNLmC89L9Z5EM1fSS/G6w==
   dependencies:
     "@babel/core" "7.12.3"
     "@fortawesome/fontawesome-svg-core" "^1.2.36"

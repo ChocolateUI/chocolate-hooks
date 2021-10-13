@@ -17,8 +17,8 @@ import React from 'react'
 import { Router } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import { useCookie } from '../src/index'
-import { Buttons } from 'chocolate-ui'
-// import Button from 'chocolate-ui/dist/components/Buttons';
+// import { Buttons } from 'chocolate-ui'
+import Buttons from 'chocolate-ui/dist/components/Buttons';
 import 'chocolate-ui/dist/components/Buttons/style';
 const history = createBrowserHistory()
 
@@ -27,7 +27,7 @@ const App = () => {
 
   return (
     <>
-      <Button onClick={
+      <Buttons onClick={
         () => {
           // or updateCookie('123456')
           updateCookie(123456, {expires: 5})
@@ -35,14 +35,14 @@ const App = () => {
             console.log('value', value)
           }, 300)
         }
-      }> getCookie </Button>
+      }> getCookie </Buttons>
 
-      <Button style={{ marginLeft: 20 }} onClick={
+      <Buttons style={{ marginLeft: 20 }} onClick={
         () => {
           deleteCookie()
           console.log('value', value)
         }
-      }> deleteCookie </Button>
+      }> deleteCookie </Buttons>
     </>
   )
 }
@@ -55,6 +55,7 @@ const Example = () => (
 
 export default Example
 ```
+
 
 ## API
 
