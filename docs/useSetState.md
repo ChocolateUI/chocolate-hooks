@@ -17,7 +17,7 @@ import React from 'react'
 import { Router } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import { useSetState } from '../src/index'
-import { Button } from 'chocolate-ui'
+import { Button, Input } from 'chocolate-ui'
 const history = createBrowserHistory()
 
 const App = () => {
@@ -34,6 +34,7 @@ const App = () => {
         <br />
         job: {state.job}
       </p>
+      <Input />
       <Button onClick={() => setState({ name: 'xue' })}> set name </Button>
 
       <Button
