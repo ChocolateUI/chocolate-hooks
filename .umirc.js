@@ -35,7 +35,7 @@ export default defineConfig({
         libraryName: 'chocolate-ui',
         libraryDirectory: "dist/components",
         style: true,
-        camel2DashComponentName: "false"
+        camel2DashComponentName: false
       }
     ],
   ],
