@@ -18,7 +18,6 @@ import { Router } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import { useSetState } from '../src/index'
 import { Button } from 'chocolate-ui'
-import 'chocolate-ui/dist/components/Buttons/style'
 const history = createBrowserHistory()
 
 const App = () => {

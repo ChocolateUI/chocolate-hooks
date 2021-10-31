@@ -17,9 +17,8 @@ import React from 'react'
 import { Router } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import { useCookie } from '../src/index'
-// import { Buttons } from 'chocolate-ui'
-import Buttons from 'chocolate-ui/dist/components/Buttons';
-import 'chocolate-ui/dist/components/Buttons/style';
+import { Button } from 'chocolate-ui'
+
 const history = createBrowserHistory()
 
 const App = () => {
@@ -27,7 +26,7 @@ const App = () => {
 
   return (
     <>
-      <Buttons onClick={
+      <Button onClick={
         () => {
           // or updateCookie('123456')
           updateCookie(123456, {expires: 5})
@@ -35,14 +34,14 @@ const App = () => {
             console.log('value', value)
           }, 300)
         }
-      }> getCookie </Buttons>
+      }> getCookie </Button>
 
-      <Buttons style={{ marginLeft: 20 }} onClick={
+      <Button style={{ marginLeft: 20 }} onClick={
         () => {
           deleteCookie()
           console.log('value', value)
         }
-      }> deleteCookie </Buttons>
+      }> deleteCookie </Button>
     </>
   )
 }

@@ -22,6 +22,7 @@ import { Router } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import { useCountDown } from '../src/index'
 import { Button } from 'chocolate-ui'
+
 const history = createBrowserHistory()
 
 const App = () => {
@@ -99,8 +100,6 @@ import React, { useState, useEffect } from 'react'
 import { Router } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import { useCountDown } from '../src/index'
-// import Button from 'chocolate-ui/dist/components/Button';
-import 'chocolate-ui/dist/components/Buttons/style'
 const history = createBrowserHistory()
 
 const App = () => {
@@ -145,9 +144,7 @@ import React, { useState, useEffect } from 'react'
 import { Router } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import { useCountDown } from '../src/index'
-import { Button } from 'chocolate-ui'
-// import Button from 'chocolate-ui/dist/components/Button'
-import 'chocolate-ui/dist/components/Buttons/style'
+import { Button, Message } from 'chocolate-ui'
 const history = createBrowserHistory()
 
 const App = () => {
@@ -168,7 +165,9 @@ const App = () => {
           {days} 天{hours} 小时 {minutes} 分钟 {seconds} 秒钟 {milliseconds}{' '}
           毫秒
         </div>
-      ) : <div>点击开始按钮进行计时</div>}
+      ) : (
+        <div>点击开始按钮进行计时</div>
+      )}
 
       <div style={{ marginTop: 20 }}>
         <Button
@@ -176,6 +175,7 @@ const App = () => {
           onClick={() => {
             setEndTime(Date.now() + 24 * 60 * 60 * 1000)
             setDisabledT(true)
+            Message.info({ content: '开始计时' })
           }}
           disabled={disabledT}
           style={{ marginRight: 20 }}
@@ -184,9 +184,11 @@ const App = () => {
         </Button>
         <Button
           btnType="default"
+          disabled={!disabledT}
           onClick={() => {
             setEndTime(undefined)
             setDisabledT(false)
+            Message.info({ content: '结束计时' })
           }}
         >
           结束

@@ -16,26 +16,24 @@
  */
 import React from 'react'
 import { Router } from 'react-router-dom'
-import { Table, Space } from 'antd'
 import { createBrowserHistory } from 'history'
 import { useSearchParams, UseSearchParamsSchemaType } from '../src/index'
-import { Button } from 'chocolate-ui';
-import 'chocolate-ui/dist/components/Buttons/style';
+import { Button, Table } from 'chocolate-ui'
 
 const history = createBrowserHistory()
 
 const dataSource = [
   {
     key: '1',
-    name: '胡彦斌',
+    name: '吴彦祖',
     age: 32,
-    address: '西湖区湖底公园1号',
+    address: '朝阳区人民公园1号',
   },
   {
     key: '2',
-    name: '胡彦祖',
+    name: '吴彦祖',
     age: 42,
-    address: '西湖区湖底公园1号',
+    address: '朝阳区人民公园1号',
   },
 ]
 
@@ -67,29 +65,25 @@ const App = () => {
   const { searchParams, set, remove, reset } = useSearchParams({
     schema,
   })
-  console.log('searchParams: ', searchParams)
+  const btnCss = { marginRight: 20 }
+
   return (
     <>
       <pre>{JSON.stringify(searchParams, undefined, 2)}</pre>
-      <Space style={{margin: '10px 0'}}>
-        <Button btnType="primary" size="sm" onClick={() => remove(['page'])}>
+      <div style={{ marginBottom: 20 }}>
+        <Button
+          style={btnCss}
+          btnType="primary"
+          size="sm"
+          onClick={() => remove(['page'])}
+        >
           移除page属性
         </Button>
         <Button btnType="default" size="sm" onClick={() => reset()}>
           重置page属性
         </Button>
-      </Space>
-      <Table
-        columns={columns}
-        dataSource={dataSource}
-        pagination={{
-          current: searchParams.page,
-          pageSize: 1,
-          onChange(page, pageSize) {
-            set({ page })
-          },
-        }}
-      />
+      </div>
+      <Table columns={columns} dataSource={dataSource} showHeader />
     </>
   )
 }
@@ -111,9 +105,7 @@ export default Example
 
 import React from 'react'
 import { Router, useLocation } from 'react-router-dom'
-import { Space, Divider } from 'antd'
-import { Button } from 'chocolate-ui';
-import 'chocolate-ui/dist/components/Buttons/style';
+import { Button } from 'chocolate-ui'
 import { createBrowserHistory } from 'history'
 import { useSearchParams, UseSearchParamsSchemaType } from '../src/index'
 
@@ -139,11 +131,12 @@ const App = () => {
   })
 
   const { search } = useLocation()
-
+  const btnCss = { marginRight: 20, marginBottom: 20 }
   return (
     <div>
       <h5>基础示例:</h5>
       <Button
+        style={btnCss}
         btnType="primary"
         size="sm"
         onClick={() => {
@@ -159,20 +152,17 @@ const App = () => {
         添加参数
       </Button>
 
-      <Divider/>
+      <div>原始 location search: </div>
+      <code>{JSON.stringify(search, undefined, 2)}</code>
 
-      <h6>原始 location search: </h6>
-      <pre>{JSON.stringify(search, undefined, 2)}</pre>
-      <Divider />
+      <div>通过 schema 解析之后的 searchParams:</div>
+      <code>{JSON.stringify(searchParams, undefined, 2)}</code>
 
-      <h6>通过 schema 解析之后的 searchParams:</h6>
-      <pre>{JSON.stringify(searchParams, undefined, 2)}</pre>
-      <Divider />
+      <div>移除某个属性</div>
 
-      <h5>移除某个属性</h5>
-
-      <Space>
+      <div style={{ marginTop: 20 }}>
         <Button
+          style={btnCss}
           btnType="danger"
           size="sm"
           onClick={() => {
@@ -182,6 +172,7 @@ const App = () => {
           移除 name 属性
         </Button>
         <Button
+          style={btnCss}
           btnType="danger"
           size="sm"
           onClick={() => {
@@ -191,6 +182,7 @@ const App = () => {
           移除所有属性
         </Button>
         <Button
+          style={btnCss}
           btnType="danger"
           size="sm"
           onClick={() => {
@@ -199,7 +191,7 @@ const App = () => {
         >
           重置
         </Button>
-      </Space>
+      </div>
     </div>
   )
 }

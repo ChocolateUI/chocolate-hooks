@@ -28,26 +28,26 @@ export default defineConfig({
       path: 'https://github.com/ChocolateUI/chocolate-hooks',
     },
   ],
-  // extraBabelPlugins: [
-  //   [
-  //     'babel-plugin-import',
-  //     {
-  //       libraryName: 'chocolate-ui',
-  //       libraryDirectory: "dist/components",
-  //       style: true
-  //     }
-  //   ],
-  // ],
   extraBabelPlugins: [
     [
       'babel-plugin-import',
       {
-        libraryName: 'antd',
-        libraryDirectory: "lib",
+        libraryName: 'chocolate-ui',
+        libraryDirectory: "dist/components",
         style: true
       }
     ],
   ],
+  // extraBabelPlugins: [
+  //   [
+  //     'babel-plugin-import',
+  //     {
+  //       libraryName: 'antd',
+  //       libraryDirectory: "lib",
+  //       style: true
+  //     }
+  //   ],
+  // ],
   // more config: https://d.umijs.org/config
 });
 
