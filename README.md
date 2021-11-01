@@ -10,7 +10,8 @@
 
 #### 🖥️ 中文文档预览 Docs
 
->[chocolate-hooks](https://chocolateui.github.io/chocolate-hooks/)
+- 地址：[chocolate-hooks](https://chocolateui.github.io/chocolate-hooks/)
+- 演示：文档中效果演示使用 [chocolate-ui](https://github.com/ChocolateUI/chocolate-ui) 
 
 #### ☄️ 技术栈 Skills
 
@@ -19,4 +20,4 @@
 
 #### 🔨 部署 Deploy
 
-- 集成 `Git Action` 自动化部署，同时支持 `CodeQL`
+- 集成 `Git Action` 自动化部署，同时支持 `CodeQL` 代码分析
