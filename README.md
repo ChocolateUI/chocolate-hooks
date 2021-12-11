@@ -20,4 +20,4 @@
 
 #### 🔨 部署 Deploy
 
-- 集成 `Git Action` 自动化部署，同时支持 `CodeQL` 代码分析
+- 集成 `GitHub Action` 自动化部署，同时支持 `CodeQL` 代码分析
