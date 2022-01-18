@@ -94,7 +94,7 @@
     "@types/enzyme": "3.10.5",
     "@types/jest": "26.0.10",
     "@types/js-cookie": "^2.2.7",
-    "@types/react-router-dom": "5.1.5",
+    "@types/react-router-dom": "5.3.3",
     "@typescript-eslint/eslint-plugin": "3.10.1",
     "@typescript-eslint/parser": "3.10.1",
     "antd": "4.6.1",
