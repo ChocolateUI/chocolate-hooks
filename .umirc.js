@@ -13,7 +13,7 @@ export default defineConfig({
   publicPath: `/${repo}/`,
   title: 'chooks',
   description: pkg.description,
-  favicon: '/logo.png',
+  favicon: fillPrefix('logo.png'),
   logo: fillPrefix('logo.png'),
   outputPath: '_docs',
   theme: {
