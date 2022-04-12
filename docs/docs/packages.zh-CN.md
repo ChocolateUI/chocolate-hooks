@@ -1,18 +1,17 @@
 # 项目结构
 
-项目基于 `yarn` 来构建基本的工作环境，每一个 hook 都在单独维护，使用`use`前缀。
+项目基于 `yarn` 来构建基本的工作环境，每一个 hook 都在单独维护，使用 `use` 前缀。
 
-包名要确保是`chocolate-hooks`这种格式的
+包名要确保是 `chocolate-hooks` 这种格式的
 
 ```bash
 
 src
-|   |
-|   hooks
-│       ├── useCookie
-│       ├── useCountDown
-│       ├── usePrevious
-│       └── useSetState
+├──hooks
+│   ├── useCookie
+│   ├── useCountDown
+│   ├── usePrevious
+│   └── useSetState
 
 ```
 
