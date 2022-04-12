@@ -4,7 +4,7 @@ const fillPrefix = filePath => {
   const prefix = process.env.NODE_ENV === 'production' ? '/react-hooks/' : '/';
   return typeof filePath === 'string' ? prefix + filePath : '';
 };
-const repo = 'chooks'
+const repo = 'chocolate-hooks'
 
 export default defineConfig({
   mode: 'site',
