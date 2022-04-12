@@ -3,7 +3,7 @@ title: 快速上手
 order: 10
 hero:
   title: chooks
-  desc: chocolate-hooks，收集偏向业务侧的 hooks.
+  desc: chocolate-hooks，收集偏向业务侧的 hooks。
   actions:
     - text: 快速上手
       link: /zh-CN/docs/getting-started
@@ -16,7 +16,7 @@ features:
     desc: 适合全年龄段的丰富的 React Hooks 教程，想学 React Hooks，来这里就够了。
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/6319a122-e8b8-497f-9b45-37cfbe77edaa/k7htfx7t_w144_h144.png
     title: 良好的健壮性
-    desc: 经过打磨，健壮性值得信赖，欢迎大家一起共建
+    desc: 经过打磨，健壮性值得信赖，欢迎大家一起共建。
 footer: Open-source MIT Licensed | Copyright © 2021-present<br />Powered by fikyair [Chocolate Design](https://github.com/ChocolateUI)
 ---
 

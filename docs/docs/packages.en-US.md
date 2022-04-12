@@ -1,6 +1,6 @@
 # Project structure
 
-The project is based on `yarn` to build a basic working environment, each hook is maintained separately, using the `use` prefix,
+The project is based on `yarn` to build a basic working environment, each hook is maintained separately, using the `use` prefix
 
 Make sure the package name is in the format of `chooks`
 

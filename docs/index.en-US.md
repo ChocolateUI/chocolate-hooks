@@ -2,7 +2,7 @@
 title: 'chooks - React Hooks Library'
 hero:
   title: chooks
-  desc: chocolate-hooks，collect hooks that are biased towards the business side..
+  desc: chocolate-hooks，collect hooks that are biased towards the business side.
   actions:
     - text: Getting Started
       link: /docs/getting-started
