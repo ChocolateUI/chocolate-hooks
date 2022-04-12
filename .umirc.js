@@ -1,12 +1,14 @@
 import pkg from './package.json'
 import { defineConfig } from 'dumi'
-const fillPrefix = filePath => {
-  const prefix = process.env.NODE_ENV === 'production' ? '/chocolate-hooks/' : '/';
-  return typeof filePath === 'string' ? prefix + filePath : '';
-};
+const fillPrefix = (filePath) => {
+  const prefix =
+    process.env.NODE_ENV === 'production' ? '/chocolate-hooks/' : '/'
+  return typeof filePath === 'string' ? prefix + filePath : ''
+}
 const repo = 'chocolate-hooks'
 
 export default defineConfig({
+  base: `/${repo}/`,
   mode: 'site',
   publicPath: `/${repo}/`,
   title: 'chooks',
