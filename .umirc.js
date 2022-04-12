@@ -1,15 +1,19 @@
 import pkg from './package.json'
-import { defineConfig } from 'dumi';
-
-const repo = 'chocolate-hooks';
+import { defineConfig } from 'dumi'
+const fillPrefix = filePath => {
+  const prefix = process.env.NODE_ENV === 'production' ? '/react-hooks/' : '/';
+  return typeof filePath === 'string' ? prefix + filePath : '';
+};
+const repo = 'chooks'
 
 export default defineConfig({
-  base: `/${repo}/`,
+  mode: 'site',
+  // base: `/${repo}/`,
   publicPath: `/${repo}/`,
   title: repo,
   description: pkg.description,
   favicon: '/logo.png',
-  logo: './logo.png',
+  logo: fillPrefix('logo.png'),
   outputPath: '_docs',
   theme: {
     '@primary-color': '#31c27c',
@@ -18,25 +22,35 @@ export default defineConfig({
   resolve: {
     includes: ['docs', 'src'],
   },
-  navs: [
-    {
-      title: 'Hooks',
-      path: '/hooks',
-    },
-    {
-      title: 'github',
-      path: 'https://github.com/ChocolateUI/chocolate-hooks',
-    },
+  locales: [
+    ['en-US', 'English'],
+    ['zh-CN', '中文'],
   ],
+  navs: {
+    'zh-CN': [
+      null,
+      {
+        title: 'GitHub',
+        path: 'https://github.com/ChocolateUI/chocolate-hooks',
+      },
+    ],
+    'en-US': [
+      null,
+      {
+        title: 'GitHub',
+        path: 'https://github.com/ChocolateUI/chocolate-hooks',
+      },
+    ],
+  },
   extraBabelPlugins: [
     [
       'babel-plugin-import',
       {
         libraryName: 'chocolate-ui',
-        libraryDirectory: "dist/components",
+        libraryDirectory: 'dist/components',
         style: true,
-        camel2DashComponentName: false
-      }
+        camel2DashComponentName: false,
+      },
     ],
   ],
   // extraBabelPlugins: [
@@ -50,6 +64,6 @@ export default defineConfig({
   //   ],
   // ],
   // more config: https://d.umijs.org/config
-});
+})
 
 // 样式覆盖：https://github.com/fi3ework/blog/issues/44

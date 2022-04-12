@@ -17,7 +17,7 @@
 import React from 'react'
 import { Router } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
-import { useSearchParams, UseSearchParamsSchemaType } from '../src/index'
+import { useSearchParams, UseSearchParamsSchemaType } from '../../src/index'
 import { Button, Table } from 'chocolate-ui'
 
 const history = createBrowserHistory()
@@ -107,7 +107,7 @@ import React from 'react'
 import { Router, useLocation } from 'react-router-dom'
 import { Button } from 'chocolate-ui'
 import { createBrowserHistory } from 'history'
-import { useSearchParams, UseSearchParamsSchemaType } from '../src/index'
+import { useSearchParams, UseSearchParamsSchemaType } from '../../src/index'
 
 const history = createBrowserHistory()
 

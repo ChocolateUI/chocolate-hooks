@@ -16,7 +16,7 @@
 import React from 'react'
 import { Router } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
-import { useCookie } from '../src/index'
+import { useCookie } from '../../src/index'
 import { Button } from 'chocolate-ui'
 
 const history = createBrowserHistory()

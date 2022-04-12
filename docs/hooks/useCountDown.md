@@ -20,7 +20,7 @@
 import React, { useState, useEffect } from 'react'
 import { Router } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
-import { useCountDown } from '../src/index'
+import { useCountDown } from '../../src/index'
 import { Button } from 'chocolate-ui'
 
 const history = createBrowserHistory()
@@ -58,7 +58,7 @@ export default Example
 import React, { useState, useEffect } from 'react'
 import { Router } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
-import { useCountDown } from '../src/index'
+import { useCountDown } from '../../src/index'
 const history = createBrowserHistory()
 
 const App = () => {
@@ -99,7 +99,7 @@ export default Example
 import React, { useState, useEffect } from 'react'
 import { Router } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
-import { useCountDown } from '../src/index'
+import { useCountDown } from '../../src/index'
 const history = createBrowserHistory()
 
 const App = () => {
@@ -143,7 +143,7 @@ export default Example
 import React, { useState, useEffect } from 'react'
 import { Router } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
-import { useCountDown } from '../src/index'
+import { useCountDown } from '../../src/index'
 import { Button, Message } from 'chocolate-ui'
 const history = createBrowserHistory()
 

@@ -17,7 +17,7 @@ import React, { useState } from 'react'
 import { Router } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import { Button } from 'chocolate-ui'
-import { usePrevious } from '../src/index'
+import { usePrevious } from '../../src/index'
 
 const history = createBrowserHistory()
 
