@@ -24,4 +24,8 @@ npm run dev
 
 | Hook | 说明 |
 | ---- | ----------- |
-| [`useCookie`](/hooks/use-cookie) | 优雅的使用 cookie |
+| [`useCookie`](/hooks/use-cookie) | 对 `js-cookie` 的进一步封装|
+| [`useCountDown`](/hooks/use-count-down) | 倒计时 `hooks`，支持毫秒级计时 |
+| [`usePrevious`](/hooks/use-previous) | 读取变量上一次的值 |
+| [`useSearchParams`](/hooks/use-search-params?age=10&test=defaultValue) | 处理 `URL` 的查询字符串 |
+| [`useSetState`](/hooks/use-set-state) | 像 `class` 组件 中 `this.setState` 一样丝滑 |

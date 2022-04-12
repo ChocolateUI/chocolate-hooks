@@ -24,4 +24,8 @@ Open `http://localhost:3000` to view documents about hooks.
 
 | Hook | Description |
 | ---- | ----------- |
-| [`useActionPending`](#/hook/action-pending/use-action-pending) | Add a pending indicator to any async function |
+| [`useCookie`](/hooks/use-cookie) | Further encapsulation of `js-cookie` |
+| [`useCountDown`](/hooks/use-count-down) | Countdown hooks, support millisecond-level timing |
+| [`usePrevious`](/hooks/use-previous) | Read the last value of a variable |
+| [`useSearchParams`](/hooks/use-search-params?age=10&test=defaultValue) | to process the query string of the `URL` |
+| [`useSetState`](/hooks/use-set-state) | As smooth as `this.setState` in class components |
