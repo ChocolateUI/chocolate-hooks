@@ -4,6 +4,7 @@
       <img alt="chocolate-hooks" style={{ marginLeft: 10 }} src="https://img.shields.io/npm/dm/chocolate-hooks.svg" />
       <img alt="npm" style={{ marginLeft: 10 }} src="https://img.shields.io/npm/v/chocolate-hooks.svg?style=flat" />
       <img alt="chocolate-hooks" style={{ marginLeft: 10 }} src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" />
+      <img alt="netlify" style={{ marginLeft: 10 }} src="https://img.shields.io/badge/netlify-Success-blue" />
     </div>
     <br />
     <p> <span role="img" aria-label="chocolateHooks" >🍫</span> Chocolate-Hooks </p>
@@ -28,10 +29,28 @@ npm install chocolate-hooks --save
 yarn add chocolate-hooks
 ```
 
-#### ☄️ 技术栈 Skills
+#### ☄️ 如何使用
 
-- `React 17.0.2`、`TypeScript`、`React Hooks`
-- 文档方案：`Dumi`
+```javascript
+import React from 'react'
+import { useCountDown } from 'chocolate-hooks'
+
+export const Example = () => {
+  const [date, setDate] = useState(undefined)
+  const [dateString, _] = useCountDown({
+    endTime: date,
+    format: 'dd天hh小时mm分ss秒',
+    diff: 1000,
+    onEnd: () => console.log('end'),
+  })
+
+  useEffect(() => {
+    setDate(Date.now() + 2 * 24 * 60 * 60 * 1000)
+  }, [])
+
+  return <>{dateString}</>
+}
+```
 
 #### 🔨 部署 Deploy
 
