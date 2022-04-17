@@ -1,7 +1,9 @@
+// @ts-nocheck
 import { renderHook, act } from '@testing-library/react-hooks'
 import useMouseHover from '../src/hooks/useMouseHover/index'
 
-const timeout = (time) => new Promise((resolve) => setTimeout(resolve, time))
+const timeout = (time: number | undefined) =>
+  new Promise((resolve) => setTimeout(resolve, time))
 
 test('initial hook', () => {
   const { result } = renderHook(() => useMouseHover())
