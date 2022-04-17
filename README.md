@@ -1,17 +1,32 @@
 <div align="center">
     <img alt="chocolate-hooks" style={{ width: 180, height: 180 }} src="https://blog-1253646934.cos.ap-beijing.myqcloud.com/choco-hooks.png" />
     <div >
+      <img alt="chocolate-hooks" style={{ marginLeft: 10 }} src="https://img.shields.io/npm/dm/chocolate-hooks.svg" />
+      <img alt="npm" style={{ marginLeft: 10 }} src="https://img.shields.io/npm/v/chocolate-hooks.svg?style=flat" />
       <img alt="chocolate-hooks" style={{ marginLeft: 10 }} src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" />
     </div>
     <br />
-    <p> <span role="img" aria-label="chocolateUi" >🍫</span> Chocolate-Hooks </p>
+    <p> <span role="img" aria-label="chocolateHooks" >🍫</span> Chocolate-Hooks </p>
     <p> 一个 React Hooks 库，提升开发效率</p>
 </div>
 
-#### 🖥️ 中文文档预览 Docs
+#### 🐳 预览
 
-- 地址：[chocolate-hooks](https://chocolateui.github.io/chocolate-hooks/)
-- 演示：文档中效果演示使用 [chocolate-ui](https://github.com/ChocolateUI/chocolate-ui) 
+<a href="https://chocolateui.github.io/chocolate-hooks/" target="_blank">chocolate-hooks</a>
+
+#### ⚡ 安装
+
+> 使用 npm
+
+```javascript
+npm install chocolate-hooks --save
+```
+
+> 使用 yarn
+
+```javascript
+yarn add chocolate-hooks
+```
 
 #### ☄️ 技术栈 Skills
 
